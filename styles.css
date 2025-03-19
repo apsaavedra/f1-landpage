@@ -1,0 +1,128 @@
+body {
+  background-image: linear-gradient(45deg, black 25%, transparent 25%),
+    linear-gradient(135deg, black 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, black 75%),
+    linear-gradient(135deg, transparent 75%, black 75%);
+  background-size: 25px 25px; /* Must be a square */
+  background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+}
+
+h1 {
+  font-family: "Major Mono Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 48px;
+}
+
+h2 {
+  font-family: "Silkscreen", serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #ff1e00;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-family: "Silkscreen", serif;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-family: "Silkscreen", serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Afacad Flux", serif;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  display: block;
+  font-family: "Afacad Flux", serif;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #ff1e00;
+  color: white;
+  border: none;
+  font-family: "Afacad Flux", serif;
+  font-size: 16px;
+  border-radius: 40px;
+  padding: 20px 15px 20px 15px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  box-shadow: 1px 5px 5px rgba(33, 32, 32, 0.3);
+}
+
+button:hover {
+  background-color: white;
+  color: #ff1e00;
+  border: 1px solid #ff1e00;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 30px;
+}
+
+a {
+  cursor: pointer;
+  color: #ff1e00;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+a:hover {
+  font-size: 15px;
+}
+
+.team-drivers {
+  max-width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.team-drivers:hover {
+  background-color: #ff1e00;
+  transition: all 200ms ease-in-out;
+  color: white;
+  border: 1px solid #ff1e00;
+}
+
+.container {
+  display: block;
+  background-color: white;
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 6%;
+}
+
+.driver {
+  font-family: "Afacad Flux", serif;
+  font-weight: bolder;
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 0;
+}
