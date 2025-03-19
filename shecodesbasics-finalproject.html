@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Major+Mono+Display&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: linear-gradient(45deg, black 25%, transparent 25%),
+          linear-gradient(135deg, black 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, black 75%),
+          linear-gradient(135deg, transparent 75%, black 75%);
+        background-size: 25px 25px; /* Must be a square */
+        background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+      }
+
+      h1 {
+        font-family: "Major Mono Display", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-top: 10px;
+        line-height: 48px;
+      }
+
+      h2 {
+        font-family: "Silkscreen", serif;
+        font-style: normal;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bolder;
+        color: #ff1e00;
+        margin-bottom: 50px;
+      }
+
+      h3 {
+        font-family: "Silkscreen", serif;
+        font-style: normal;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      h4 {
+        font-family: "Silkscreen", serif;
+        text-align: center;
+      }
+
+      p {
+        font-family: "Afacad Flux", serif;
+      }
+
+      ul {
+        text-align: center;
+        list-style: none;
+        list-style-type: none;
+        padding: 0;
+        display: block;
+        font-family: "Afacad Flux", serif;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #ff1e00;
+        color: white;
+        border: none;
+        font-family: "Afacad Flux", serif;
+        font-size: 16px;
+        border-radius: 40px;
+        padding: 20px 15px 20px 15px;
+        margin-top: 40px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        box-shadow: 1px 5px 5px rgba(33, 32, 32, 0.3);
+      }
+
+      button:hover {
+        background-color: white;
+        color: #ff1e00;
+        border: 1px solid #ff1e00;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 300px;
+        margin-bottom: 30px;
+      }
+
+      a {
+        cursor: pointer;
+        color: #ff1e00;
+        text-decoration: none;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+      a:hover {
+        font-size: 15px;
+      }
+
+      .team-drivers {
+        max-width: 400px;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+
+      .team-drivers:hover {
+        background-color: #ff1e00;
+        transition: all 200ms ease-in-out;
+        color: white;
+        border: 1px solid #ff1e00;
+      }
+
+      .container {
+        display: block;
+        background-color: white;
+        margin: 0 auto;
+        max-width: 60%;
+        padding: 6%;
+      }
+
+      .driver {
+        font-family: "Afacad Flux", serif;
+        font-weight: bolder;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🏎 <br />
+        Formula 1
+      </h1>
+
+      <h2>🏁10 teams, 20 drivers, 1 champion🏁</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/154/813/original/pngimg.com_-_formula_1_PNG39.png?1736867434"
+        alt="Ferrari red Formula 1 car"
+      />
+
+      <h3>What is Formula 1?</h3>
+      <p>
+        <strong>Formula 1</strong>, often abbreviated as F1, is the highest
+        class of international auto racing for single-seater formula racing
+        cars. Motor racing evolved significantly after World War II, becoming
+        more structured and leading to the establishment of Formula One as the
+        premier category in auto racing. It involves teams competing in a series
+        of Grand Prix events held on purpose-built circuits and public roads.
+        The “Formula” in the name refers to a set of rules that all participants
+        must follow when designing and building their cars.
+      </p>
+      <p>
+        F1 cars are the fastest regulated road-course racing vehicles in the
+        world. They feature sophisticated aerodynamics, powerful engines, and
+        advanced materials to maximize performance. The sport attracts the best
+        drivers globally, who compete for prestigious titles and substantial
+        prize money.
+      </p>
+
+      <br />
+
+      <h3>Grand Prix</h3>
+      <p>
+        The main goal of a Formula 1 Grand Prix is to complete a set number of
+        laps around a circuit in the shortest time possible. Drivers aim to
+        finish first and earn points based on their final position. The race
+        distance is typically around 305 kilometers (190 miles), lasting about
+        90 minutes.
+      </p>
+      <p>
+        Points are awarded to the top 10 finishers, with the winner receiving 25
+        points. These points accumulate throughout the season to determine the
+        World Drivers’ Championship and World Constructors’ Championship. Races
+        also feature elements like pit stops for tire changes and refueling,
+        adding strategic depth to the competition.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <h3>Current teams & drivers</h3>
+
+      <div class="team-drivers">
+        <h4>Ferrari</h4>
+        <ul>
+          <li>
+            <span class="driver">Lewis Hamilton🇬🇧</span>
+            <em>(7x Champion⭐️)</em><br />105 wins | 202 podiums | 4862.5
+            career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Charles Leclerc🇲🇨</span> <br />8 wins | 43
+            podiums | 1430 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Mercedes</h4>
+        <ul>
+          <li>
+            <span class="driver">George Russell🇬🇧</span> <br />3 wins | 15
+            podiums | 714 career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Kimi Antonelli🇮🇹</span> <br />0 wins | 0
+            podiums | 0 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Redbull</h4>
+        <ul>
+          <li>
+            <span class="driver">Max Verstappen🇳🇱</span>
+            <em>(4x Champion⭐️)</em><br />63 wins | 112 podiums | 3023.5 career
+            points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Liam Lawson🇳🇿</span> <br />0 wins | 0 podiums |
+            6 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>McLaren</h4>
+        <ul>
+          <li>
+            <span class="driver">Oscar Piastri🇦🇺</span> <br />2 wins | 10
+            podiums | 389 career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Lando Norris🇬🇧 </span><br />4 wins | 26 podiums
+            | 1007 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Hass</h4>
+        <ul>
+          <li>
+            <span class="driver">Esteban Ocon🇫🇷</span> <br />1 wins | 4 podiums
+            | 445 career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Oliver Bearman🇬🇧</span> <br />0 wins | 0
+            podiums | 7 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Ashton Martin</h4>
+        <ul>
+          <li>
+            <span class="driver">Fernando Alonso🇪🇸</span>
+            <em>(2x Champion⭐️)</em> <br />32 wins | 106 podiums | 2337 career
+            points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Lance Stroll🇨🇦</span> <br />0 wins | 3 podiums
+            | 292 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Williams</h4>
+        <ul>
+          <li>
+            <span class="driver">Carlos Sainz🇪🇸</span> <br />4 wins | 27 podiums
+            | 1272.5 career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Alexander Albon🇹🇭</span> <br />0 wins | 2
+            podiums | 240 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Alpine</h4>
+        <ul>
+          <li>
+            <span class="driver">Pierre Gasly🇫🇷</span> <br />1 wins | 5 podiums
+            | 436 career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Jack Doohan🇦🇺</span> <br />0 wins | 0 podiums |
+            0 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Sauber</h4>
+        <ul>
+          <li>
+            <span class="driver">Nico Hülkenberg🇩🇪</span> <br />0 wins | 0
+            podiums | 571 career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Gabriel Bortoleto🇧🇷</span> <br />0 wins | 0
+            podiums | 0 career points
+          </li>
+        </ul>
+      </div>
+
+      <br />
+
+      <div class="team-drivers">
+        <h4>Racing Bulls</h4>
+        <ul>
+          <li>
+            <span class="driver">Yuki Tsunoda🇯🇵</span> <br />0 wins | 0 podiums
+            | 91 career points
+          </li>
+          <br />
+          <li>
+            <span class="driver">Isack Hadjar🇫🇷</span> <br />0 wins | 0 podiums
+            | 0 career points
+          </li>
+        </ul>
+      </div>
+
+      <button>2025 Race Calendar</button>
+      <p class="footer">
+        Coded by
+        <a
+          href="https://www.linkedin.com/in/ana-saavedra-a358b7258/"
+          target="_blank"
+          >Ana Saavedra</a
+        >
+      </p>
+    </div>
+    <script>
+      function searchRace() {
+        let name = prompt("What is your name?");
+        let month = prompt(`Hi, ${name}! What month is it?`);
+        month = month.toLowerCase().trim();
+
+        if (month === "january") {
+          alert(`There are no F1 races in January😕`);
+        } else if (month === "february") {
+          alert(
+            `There are no F1 races in February, but you can watch the pre-season testing from the 26th to the 28th!`
+          );
+        } else if (month === "march") {
+          alert(
+            `There are two races in March:
+            🏁The Australian Grand Prix from the 14th to the 16th.
+            🏁The Chinese Grand Prix from the 21st to the 23rd.`
+          );
+        } else if (month === "april") {
+          alert(
+            `There are three races in April:
+            🏁The Japanese Grand Prix from the 4th to the 6th.
+            🏁The Bahrain Grand Prix from the 11th to the 13th.
+            🏁The Saudi Arabian Grand Prix from the 18th to the 20th.`
+          );
+        } else if (month === "may") {
+          alert(`There are four races in May:
+            🏁The Miami Grand Prix from the 2nd to the 4th.
+            🏁The Emilia Romagna Grand Prix from the 16th to the 18th.
+            🏁The Monaco Grand Prix from the 23rd to the 25th.
+            🏁The Spanish Grand Prix from the 30th to the 1st of June`);
+        } else if (month === "june") {
+          alert(`There are two races in June:
+            🏁The Canadian Grand Prix from the 13th to the 15th.
+            🏁The Austrian Grand Prix from the 27th to the 29th.`);
+        } else if (month === "july") {
+          alert(`There are two races in July:
+            🏁The British Grand Prix from the 4th to the 6th.
+            🏁The Belgian Grand Prix from the 25th to the 27th.`);
+        } else if (month === "august") {
+          alert(`There are two races in August:
+            🏁The Hungarian Grand Prix from the 1st to the 3rd.
+            🏁The Dutch Grand Prix from the 26th to the 31st.`);
+        } else if (month === "september") {
+          alert(`There are two races in September:
+            🏁The Italian Grand Prix from the 5th to the 7th.
+            🏁The Azerbaijan Grand Prix from the 19th to the 21st.`);
+        } else if (month === "october") {
+          alert(`There are three races in October:
+            🏁The Singapore Grand Prix from the 3rd to the 5th.
+            🏁The United States Grand Prix from the 17th to the 19th.
+            🏁The México City Grand Prix from the 24th to the 26th.`);
+        } else if (month === "november") {
+          alert(`There are three races in November:
+            🏁The São Paulo Grand Prix from the 7th to the 9th.
+            🏁The Las Vegas Grand Prix from the 20th to the 22nd.
+            🏁The Qatar  Grand Prix from the 28th to the 30th.`);
+        } else if (month === "december") {
+          alert(`There is one race in December:
+            🏁The Abu Dhabi Grand Prix from the 5th to the 7th.`);
+        } else {
+          alert("Ups, there was an error in the month. Try again!");
+        }
+      }
+
+      let findRaceButton = document.querySelector("button");
+      findRaceButton.addEventListener("click", searchRace);
+    </script>
+  </body>
+</html>
